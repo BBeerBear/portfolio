@@ -1,7 +1,6 @@
 {
-  "homepage": "https://bbeerbear.github.io/portfolio",
-  "name": "my-website",
-  "private": true,
+  "name": "porfolio",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
