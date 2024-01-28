@@ -7,7 +7,7 @@ import Contact from './pages/Contact';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/portfolio',
     element: <Root />,
     children: [
       { path: '/', element: <Home /> },
