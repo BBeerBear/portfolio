@@ -5,7 +5,7 @@ import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
-const router = createBrowserRouter([
+const routes = [
   {
     path: '/',
     element: <Root />,
@@ -16,7 +16,11 @@ const router = createBrowserRouter([
       { path: 'contact', element: <Contact /> },
     ],
   },
-]);
+];
+
+const router = createBrowserRouter(routes, {
+  basename: import.meta.env.DEV ? '/' : '/portfolio/',
+});
 
 const App = () => {
   return <RouterProvider router={router} />;
