@@ -4,8 +4,8 @@ import Introduction from '../components/about/Introduction';
 import Workexp from '../components/about/Workexp';
 const Home = () => {
   return (
-    <div className='container mx-auto pt-3'>
-      <div className='flex flex-col gap-2'>
+    <div className=''>
+      <div className='flex flex-col gap-4'>
         <Introduction />
         <Education />
         <Workexp />

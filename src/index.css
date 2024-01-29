@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-my-bg bg-cover text-slate-700 font-mono;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    /* @apply text-4xl sm:text-5xl md:text-6xl; */
+    @apply text-4xl;
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  button {
+    @apply shadow-sm shadow-gray-400 rounded-xl uppercase bg-sky-500 text-white font-bold p-2;
+  }
+}

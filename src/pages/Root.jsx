@@ -5,7 +5,7 @@ const Root = () => {
   return (
     <>
       <Navbar />
-      <main>
+      <main className='w-full h-screen pt-20 container mx-auto px-16'>
         <Outlet />
       </main>
     </>
