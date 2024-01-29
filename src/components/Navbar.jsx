@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import {
-  AiOutlineClose,
-  AiOutlineMail,
-  AiOutlineMenu,
-  AiOutlineWechat,
-} from 'react-icons/ai';
-import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import avatar from '../assets/avatar/ted.jpg';
+import SocialLink from './about/SocialLink';
 
 export const Navbar = () => {
   const [leftNav, setLeftNav] = useState(false);
@@ -36,14 +31,14 @@ export const Navbar = () => {
             >
               About
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to='/projects'
               className={({ isActive }) =>
                 isActive ? 'text-sky-500 font-semibold' : undefined
               }
             >
               Projects
-            </NavLink>
+            </NavLink> */}
             <NavLink
               to='/skills'
               className={({ isActive }) =>
@@ -111,14 +106,14 @@ export const Navbar = () => {
                 >
                   About
                 </NavLink>
-                <NavLink
+                {/* <NavLink
                   to='/projects'
                   className={({ isActive }) =>
                     isActive ? 'text-sky-500 font-semibold' : undefined
                   }
                 >
                   Projects
-                </NavLink>
+                </NavLink> */}
                 <NavLink
                   to='/skills'
                   className={({ isActive }) =>
@@ -136,29 +131,9 @@ export const Navbar = () => {
                   Contact
                 </NavLink> */}
               </ul>
-              <div className='flex items-center justify-between mt-40'>
-                <a
-                  href='https://www.linkedin.com/in/liminxiong/'
-                  className='rounded-full shadow-md cursor-pointer p-4 hover:scale-105 ease-in duration-300'
-                >
-                  <FaLinkedin size={20} />
-                </a>
-                <a
-                  href='https://github.com/BBeerBear'
-                  className='rounded-full shadow-md cursor-pointer p-4 hover:scale-105 ease-in duration-300'
-                >
-                  <FaGithub size={20} />
-                </a>
-                <div className='rounded-full shadow-md cursor-pointer p-4 hover:scale-105 ease-in duration-300'>
-                  <AiOutlineMail size={20} />
-                </div>
-                <a
-                  href='https://www.facebook.com/profile.php?id=100084300735220'
-                  className='rounded-full shadow-md cursor-pointer p-4 hover:scale-105 ease-in duration-300'
-                >
-                  <FaFacebook size={20} />
-                </a>
-              </div>
+            </div>
+            <div className='mt-20'>
+              <SocialLink />
             </div>
           </div>
         </div>

@@ -4,13 +4,11 @@ import Introduction from '../components/about/Introduction';
 import Workexp from '../components/about/Workexp';
 const Home = () => {
   return (
-    <div className=''>
-      <div className='flex flex-col gap-4'>
-        <Introduction />
-        <Education />
-        <Workexp />
-        <Interest />
-      </div>
+    <div className='flex flex-col gap-4'>
+      <Introduction />
+      <Education />
+      <Workexp />
+      <Interest />
     </div>
   );
 };

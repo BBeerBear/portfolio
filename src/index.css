@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-my-bg bg-cover text-slate-700 font-mono;
+    @apply bg-my-bg bg-fixed text-slate-700 font-mono;
   }
 
   h1,
