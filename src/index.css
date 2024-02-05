@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-my-bg bg-fixed text-slate-700 font-mono;
+    @apply bg-my-bg bg-fixed text-slate-900 font-mono;
   }
 
   h1,
@@ -13,7 +13,7 @@
   h4,
   h5,
   h6 {
-    @apply font-bold;
+    @apply font-extrabold;
   }
 
   h1 {
@@ -23,6 +23,10 @@
 
   h2 {
     @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-2xl;
   }
 
   button {

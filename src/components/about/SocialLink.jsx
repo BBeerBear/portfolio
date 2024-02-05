@@ -6,22 +6,22 @@ const SocialLink = () => {
     <div className='flex items-center justify-between gap-2 sm:gap-10'>
       <a
         href='https://www.linkedin.com/in/liminxiong/'
-        className='rounded-full shadow-md cursor-pointer p-2 hover:scale-105 ease-in duration-300'
+        className='rounded-full shadow-xl bg-white cursor-pointer p-3 hover:scale-110 ease-in duration-300'
       >
         <FaLinkedin />
       </a>
       <a
         href='https://github.com/BBeerBear'
-        className='rounded-full shadow-md cursor-pointer p-2 hover:scale-105 ease-in duration-300'
+        className='rounded-full shadow-xl bg-white  cursor-pointer p-3 hover:scale-110 ease-in duration-300'
       >
         <FaGithub />
       </a>
-      <div className='rounded-full shadow-md cursor-pointer p-2 hover:scale-105 ease-in duration-300'>
+      <div className='rounded-full shadow-xl bg-white  cursor-pointer p-3 hover:scale-110 ease-in duration-300'>
         <AiOutlineMail />
       </div>
       <a
         href='https://www.facebook.com/profile.php?id=100084300735220'
-        className='rounded-full shadow-md cursor-pointer p-2 hover:scale-105 ease-in duration-300'
+        className='rounded-full shadow-xl bg-white  cursor-pointer p-3 hover:scale-110 ease-in duration-300'
       >
         <FaFacebook />
       </a>

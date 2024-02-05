@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import avatar from '../assets/avatar/ted.jpg';
+import logo from '../assets/logo/lx.png';
 import SocialLink from './about/SocialLink';
 
 export const Navbar = () => {
@@ -13,15 +14,15 @@ export const Navbar = () => {
 
   return (
     <header className='fixed w-full h-14 shadow-xl z-[100] bg-white'>
-      <div className='flex items-center justify-between w-full h-full px-2 2xl:px-16'>
+      <div className='flex items-center justify-between w-full h-full px-2 2xl:px-16 shadow-xl'>
         <Link
           to='/'
-          className='flex items-center justify-center text-sky-500 font-mono font-bold rounded-lg border-sky-500 border-2 px-4 py-1 shadow-lg'
+          className='flex items-center justify-center rounded-full w-12 overflow-hidden shadow-md'
         >
-          LX
+          <img src={logo} alt='' className='' />
         </Link>
         <div>
-          <ul className='hidden md:flex items-center uppercase gap-2'>
+          <ul className='hidden md:flex items-center uppercase gap-3'>
             <NavLink
               to='/'
               className={({ isActive }) =>
@@ -31,14 +32,14 @@ export const Navbar = () => {
             >
               About
             </NavLink>
-            {/* <NavLink
+            <NavLink
               to='/projects'
               className={({ isActive }) =>
                 isActive ? 'text-sky-500 font-semibold' : undefined
               }
             >
               Projects
-            </NavLink> */}
+            </NavLink>
             <NavLink
               to='/skills'
               className={({ isActive }) =>

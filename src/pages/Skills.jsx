@@ -16,6 +16,7 @@ import CplusplusLogo from '../assets/skills/cplusplus-logo.svg';
 import LinuxLogo from '../assets/skills/linux-logo.svg';
 import VSCodeLogo from '../assets/skills/vscode-logo.svg';
 import AndroidStdLogo from '../assets/skills/android-studio-logo.svg';
+
 const skills = [
   { logo: HtmlLogo, name: 'HTML5' },
   { logo: CSSLogo, name: 'CSS3' },
@@ -44,13 +45,13 @@ const Skills = () => {
           {skills.map((skill, i) => (
             <div
               key={i}
-              className='shadow-xl rounded-xl hover:scale-105 ease-in duration-300 p-8 bg-white'
+              className='self-stretch shadow-xl rounded-xl hover:scale-105 ease-in duration-300 p-8 bg-white'
             >
               <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                <div className='m-auto'>
-                  <img src={skill.logo} width='40px' height='40px' alt='' />
+                <div className='flex justify-center items-center w-10 h-10 m-auto'>
+                  <img src={skill.logo} className='w-full h-full' />
                 </div>
-                <div>{skill.name}</div>
+                <div className='font-bold'>{skill.name}</div>
               </div>
             </div>
           ))}
